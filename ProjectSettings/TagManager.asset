@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Main Camera Rig
+  - Gun
+  - Grabbable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - NocollisionP1
+  - NocollisionP2
+  - NocollisionP3
+  - NocollisionP4
+  - 
+  - Nocollision1
+  - Nocollision2
+  - Nocollision3
+  - Nocollision4
+  - Nocollision5
+  - Nocollision6
+  - Nocollision7
+  - Nocollision8
+  - Nocollision9
+  - Nocollision10
+  - Nocollision11
+  - Nocollision12
+  - Nocollision13
+  - Nocollision14
+  - Nocollision15
+  - Nocollision16
+  - Nocollision17
+  - Nocollision18
+  - Head
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
