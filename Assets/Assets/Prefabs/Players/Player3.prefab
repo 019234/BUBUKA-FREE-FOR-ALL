@@ -1260,7 +1260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3929372749740042117}
   - component: {fileID: 4820090299154347604}
-  - component: {fileID: 6563198030908918781}
+  - component: {fileID: 5280285820349246062}
   - component: {fileID: 1688730453468267465}
   - component: {fileID: 213243230026098006}
   - component: {fileID: 7739755496507794994}
@@ -1302,7 +1302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityScale: 25
---- !u!114 &6563198030908918781
+--- !u!114 &5280285820349246062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1311,33 +1311,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 2072931608146504276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc61a76fe06359c49b49b344804d17c2, type: 3}
+  m_Script: {fileID: 11500000, guid: b7c2c1aaba3fc474cb3932b66512c37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _anim: {fileID: 7396696834997981298}
-  _mover: {fileID: 7002775592128950691}
-  _speed: 400
-  _airSpeed: 150
-  _jumpPower: 200
+  _anim: {fileID: 0}
+  _mover: {fileID: 0}
+  _speed: 5
+  _airSpeed: 2.5
+  _jumpPower: 10
   _forwardJumpForce: 10
-  _groundCheckDistance: 0.6
+  _groundCheckDistance: 0.2
   _groundLayer:
     serializedVersion: 2
-    m_Bits: 1
-  fist_Right: {fileID: 2241583505816380651}
-  fist_Left: {fileID: 5875181534792853047}
-  _punchPower: 10
-  _head: {fileID: 6693931907318732150}
-  _headbutForce: 10
+    m_Bits: 0
+  fist_Right: {fileID: 0}
+  fist_Left: {fileID: 0}
+  _punchPower: 5
+  _head: {fileID: 0}
+  _headbutForce: 0
   idleThreshold: 0.1
-  idleTimeThreshold: 30
+  idleTimeThreshold: 3
   moveThreshold: 0.1
-  _inputNameHorizontal: HA3
-  _inputNameVertical: VA3
-  _inputNameJump: JP3
-  _inputNameGrabRight: RG3
-  _inputNameGrabLeft: LG3
-  _inputNameDive: DV3
+  _inputNameHorizontal: 
+  _inputNameVertical: 
+  _inputNameJump: 
+  _inputNameGrabRight: 
+  _inputNameGrabLeft: 
+  _inputNameDive: 
+  _inputNamePickUp: 
 --- !u!114 &1688730453468267465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4375,7 +4376,7 @@ MonoBehaviour:
   - {fileID: 6403468170946775235}
   - {fileID: 4992733839358678613}
   - {fileID: 2701794368488623958}
-  - {fileID: 6563198030908918781}
+  - {fileID: 0}
   - {fileID: 1688730453468267465}
   - {fileID: 7739755496507794994}
   _zeroSpring: 5

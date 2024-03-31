@@ -1763,7 +1763,7 @@ MonoBehaviour:
   - {fileID: 1640051128205500528}
   - {fileID: 4004816911906317065}
   - {fileID: 4092441212520438757}
-  _defaultSpring: 700
+  _defaultSpring: 500
   _zeroSpring: 5
   _inputNameDive: DV1
 --- !u!138 &3459118437214833958
@@ -4325,7 +4325,7 @@ GameObject:
   - component: {fileID: 8666750853809487128}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -25,7 +25,6 @@ namespace ItsaMeKen
 
         void StartFuse()
         {
-            
             Invoke("Explode", fuseDuration);
         }
 
@@ -48,6 +47,8 @@ namespace ItsaMeKen
             {
                 Instantiate(explosionEffect, transform.position, Quaternion.identity);
             }
+
+            
 
             Destroy(gameObject);
 

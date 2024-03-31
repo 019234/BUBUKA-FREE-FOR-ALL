@@ -2,25 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThreadMill : MonoBehaviour
+namespace ItsaMeKen
 {
-    public Vector3 forceDirection = Vector3.forward;  
-    public float forceMagnitude = 10f;  
-
-    void OnTriggerStay(Collider other)
+    public class ThreadMill : MonoBehaviour
     {
-        if (other.GetComponent<Rigidbody>() != null)
+        public Vector3 forceDirection = Vector3.forward;
+        public float forceMagnitude = 10f;
+
+        void OnTriggerStay(Collider other)
         {
-            ApplyConstantForce(other.GetComponent<Rigidbody>());
+            if (other.GetComponent<Rigidbody>() != null)
+            {
+                ApplyConstantForce(other.GetComponent<Rigidbody>());
+            }
         }
-    }
 
-    void ApplyConstantForce(Rigidbody rb)
-    {
-         
-        Vector3 forceVector = forceDirection.normalized * forceMagnitude;
+        void ApplyConstantForce(Rigidbody rb)
+        {
 
-        
-        rb.AddForce(forceVector, ForceMode.Force);
+            Vector3 forceVector = forceDirection.normalized * forceMagnitude;
+
+
+            rb.AddForce(forceVector, ForceMode.Force);
+        }
     }
 }

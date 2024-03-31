@@ -115,6 +115,7 @@ namespace ItsaMeKen
                 fist_Right.AddForce(forwardForce, ForceMode.Impulse);
 
                 _anim.SetBool("Right_FuckYou", true);
+
             }
             else if (Input.GetButtonUp(_inputNameGrabRight))
             {
@@ -163,3 +164,6 @@ namespace ItsaMeKen
         }
     }
 }
+
+
+//CHECKPOINT REACHED
