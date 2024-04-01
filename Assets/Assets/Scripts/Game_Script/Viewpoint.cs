@@ -9,52 +9,63 @@ namespace ItsaMeKen
     {
         [Header("Viewpoint")]
         [SerializeField] string PointText = "Press E";
-        [Space, SerializeField] Camera cam;
-        [SerializeField] GameObject PlayerController;
+        [Space]
         [SerializeField] Image ImagePrefab;
-        [Space ,SerializeField, Range(0.1f, 20)] float MaxViewRange = 8;
+        [Space]
+        [SerializeField, Range(0.1f, 20)] float MaxViewRange = 8;
         [SerializeField, Range(0.1f, 20)] float MaxTextViewRange = 3;
-        float Distance;
-        Text ImageText;
-        Image ImageUI;
+
+        private Camera cam;
+        private GameObject playerController;
+        private float distance;
+        private Text imageText;
+        private Image imageUI;
+
         void Start()
         {
-            ImageUI = Instantiate(ImagePrefab, FindObjectOfType<Canvas>().transform).GetComponent<Image>();
-            ImageText = ImageUI.GetComponentInChildren<Text>();
-            ImageText.text = PointText;
+            cam = Camera.main;
+            playerController = GameObject.FindGameObjectWithTag("Player"); // Assuming player controller is tagged as "Player"
+
+            imageUI = Instantiate(ImagePrefab, FindObjectOfType<Canvas>().transform).GetComponent<Image>();
+            imageText = imageUI.GetComponentInChildren<Text>();
+            imageText.text = PointText;
         }
+
         void Update()
         {
-            ImageUI.transform.position = cam.WorldToScreenPoint(calculateWorldPosition(transform.position, cam));
-            Distance = Vector3.Distance(PlayerController.transform.position, transform.position);
+            if (cam == null || playerController == null)
+                return;
 
-            if(Distance < MaxTextViewRange)
+            imageUI.transform.position = cam.WorldToScreenPoint(calculateWorldPosition(transform.position, cam));
+            distance = Vector3.Distance(playerController.transform.position, transform.position);
+
+            if (distance < MaxTextViewRange)
             {
-                Color OpacityColor = ImageText.color;
-                OpacityColor.a = Mathf.Lerp(OpacityColor.a, 1, 10 * Time.deltaTime);
-                ImageText.color = OpacityColor;
+                Color opacityColor = imageText.color;
+                opacityColor.a = Mathf.Lerp(opacityColor.a, 1, 10 * Time.deltaTime);
+                imageText.color = opacityColor;
             }
             else
             {
-                Color OpacityColor = ImageText.color;
-                OpacityColor.a = Mathf.Lerp(OpacityColor.a, 0, 10 * Time.deltaTime);
-                ImageText.color = OpacityColor;
+                Color opacityColor = imageText.color;
+                opacityColor.a = Mathf.Lerp(opacityColor.a, 0, 10 * Time.deltaTime);
+                imageText.color = opacityColor;
             }
 
-            if (Distance < MaxViewRange)
+            if (distance < MaxViewRange)
             {
-                Color OpacityColor = ImageUI.color;
-                OpacityColor.a = Mathf.Lerp(OpacityColor.a, 1, 10 * Time.deltaTime);
-                ImageUI.color = OpacityColor;
+                Color opacityColor = imageUI.color;
+                opacityColor.a = Mathf.Lerp(opacityColor.a, 1, 10 * Time.deltaTime);
+                imageUI.color = opacityColor;
             }
             else
             {
-                Color OpacityColor = ImageUI.color;
-                OpacityColor.a = Mathf.Lerp(OpacityColor.a, 0, 10 * Time.deltaTime);
-                ImageUI.color = OpacityColor;
+                Color opacityColor = imageUI.color;
+                opacityColor.a = Mathf.Lerp(opacityColor.a, 0, 10 * Time.deltaTime);
+                imageUI.color = opacityColor;
             }
-
         }
+
         private Vector3 calculateWorldPosition(Vector3 position, Camera camera)
         {
             Vector3 camNormal = camera.transform.forward;
@@ -68,6 +79,5 @@ namespace ItsaMeKen
             }
             return position;
         }
-
     }
 }

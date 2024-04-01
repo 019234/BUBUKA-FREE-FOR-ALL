@@ -14,12 +14,6 @@ namespace ItsaMeKen
         public GameObject objectLook;
         public Transform targetLook;
 
-        void Start()
-        { 
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-
         void Update()
         {
              

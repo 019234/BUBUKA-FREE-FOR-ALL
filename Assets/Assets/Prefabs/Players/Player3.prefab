@@ -1263,7 +1263,7 @@ GameObject:
   - component: {fileID: 5280285820349246062}
   - component: {fileID: 1688730453468267465}
   - component: {fileID: 213243230026098006}
-  - component: {fileID: 7739755496507794994}
+  - component: {fileID: 7701412829619985389}
   - component: {fileID: 6331524191827887308}
   - component: {fileID: 5111074364092336404}
   - component: {fileID: 5985428618261555927}
@@ -1314,31 +1314,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c2c1aaba3fc474cb3932b66512c37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _anim: {fileID: 0}
-  _mover: {fileID: 0}
-  _speed: 5
-  _airSpeed: 2.5
-  _jumpPower: 10
+  _anim: {fileID: 7396696834997981298}
+  _mover: {fileID: 7002775592128950691}
+  _speed: 400
+  _airSpeed: 150
+  _jumpPower: 200
   _forwardJumpForce: 10
-  _groundCheckDistance: 0.2
+  _groundCheckDistance: 0.6
   _groundLayer:
     serializedVersion: 2
-    m_Bits: 0
-  fist_Right: {fileID: 0}
-  fist_Left: {fileID: 0}
-  _punchPower: 5
-  _head: {fileID: 0}
-  _headbutForce: 0
+    m_Bits: 1
+  fist_Right: {fileID: 2552894586427675951}
+  fist_Left: {fileID: 4835103951049962682}
+  _punchPower: 10
+  _head: {fileID: 6693931907318732150}
+  _headbutForce: 5
   idleThreshold: 0.1
-  idleTimeThreshold: 3
+  idleTimeThreshold: 30
   moveThreshold: 0.1
-  _inputNameHorizontal: 
-  _inputNameVertical: 
-  _inputNameJump: 
-  _inputNameGrabRight: 
-  _inputNameGrabLeft: 
-  _inputNameDive: 
-  _inputNamePickUp: 
+  _inputNameHorizontal: HA3
+  _inputNameVertical: VA3
+  _inputNameJump: JP3
+  _inputNameGrabRight: RG3
+  _inputNameGrabLeft: LG3
+  _inputNameDive: DV3
+  _inputNamePickUp: PU3
 --- !u!114 &1688730453468267465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1367,7 +1367,7 @@ MonoBehaviour:
   rotationSpeed: 1000
   inputNameHorizontal: HA3
   inputNameVertical: VA3
---- !u!114 &7739755496507794994
+--- !u!114 &7701412829619985389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1376,49 +1376,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 2072931608146504276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd9cdb4440d63744b42bba1959f6c83, type: 3}
+  m_Script: {fileID: 11500000, guid: 66f32a5103d0e3c44b58e981931bae0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _targetJoints:
   - {fileID: 8053953975133823906}
   - {fileID: 7088835024299489847}
   - {fileID: 4569041869811029424}
-  - {fileID: 2619402161603859705}
   - {fileID: 1616275971095736842}
   - {fileID: 233678451092574443}
-  - {fileID: 1128449561426439215}
   - {fileID: 4286492275166890540}
   - {fileID: 5615148283693683983}
   - {fileID: 7895929951002818815}
   - {fileID: 5292963994439887659}
-  - {fileID: 33418839771306104}
-  - {fileID: 307193530326029881}
   - {fileID: 7850316848567033981}
   - {fileID: 592388598646868151}
-  - {fileID: 8863781805085018341}
-  - {fileID: 1763134245047408102}
-  - {fileID: 0}
-  - {fileID: 7438505188809235862}
   _scriptsToDisable:
-  - {fileID: 1688730453468267465}
-  - {fileID: 0}
   - {fileID: 8034416617456518215}
   - {fileID: 9058701213483778817}
   - {fileID: 611690608860133748}
-  - {fileID: 4418984179050703018}
   - {fileID: 5443663159163815124}
   - {fileID: 626615477436397697}
-  - {fileID: 264032715855447818}
   - {fileID: 3850375881513235942}
   - {fileID: 6329850937107586746}
   - {fileID: 3339197842916902794}
   - {fileID: 2193132560169025124}
-  - {fileID: 1647483838672576361}
-  - {fileID: 2928421631633152584}
   - {fileID: 2889219529742570860}
   - {fileID: 6403468170946775235}
-  - {fileID: 4992733839358678613}
-  - {fileID: 2701794368488623958}
+  - {fileID: 1688730453468267465}
   _defaultSpring: 700
   _zeroSpring: 5
   _inputNameDive: DV3
@@ -4378,7 +4363,7 @@ MonoBehaviour:
   - {fileID: 2701794368488623958}
   - {fileID: 0}
   - {fileID: 1688730453468267465}
-  - {fileID: 7739755496507794994}
+  - {fileID: 0}
   _zeroSpring: 5
   _defaultSpring: 700
   _maxZeroSpringCount: 3

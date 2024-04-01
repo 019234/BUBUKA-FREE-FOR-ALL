@@ -42,14 +42,17 @@ namespace ItsaMeKen
         [SerializeField] private string _inputNameGrabRight;
         [SerializeField] private string _inputNameGrabLeft;
         [SerializeField] private string _inputNameDive;
-        [SerializeField] private string _inputNamePickUp;
+
+
+
 
 
         private bool isMoving = false;
         private bool isJumping = false;
         private bool isDiving = false;
         private bool IsIdleTooLong = false;
-        private bool isDPadPressed = false;
+        private bool isDPadLeftPressed = false;
+
 
         void FixedUpdate()
         {
@@ -140,30 +143,21 @@ namespace ItsaMeKen
 
             /////////////////////////////////////////////////////////////////////  DIVE/HEADBUTT
 
-            if (!isDPadPressed && Input.GetAxisRaw(_inputNameDive) > -0.5f)
+            if (!isDPadLeftPressed && Input.GetAxisRaw(_inputNameDive) > -0.5f)
             {
-                isDPadPressed = true;
+                isDPadLeftPressed = true;
                 HandleDPadUpPress();
             }
-            if (isDPadPressed && Input.GetAxisRaw(_inputNameDive) <= -0.5f)
+            if (isDPadLeftPressed && Input.GetAxisRaw(_inputNameDive) <= -0.5f)
             {
-                isDPadPressed = false;
+                isDPadLeftPressed = false;
             }
 
-            //////////////////////////////////////////////////////////////////// PICK UP
-            
-            if (!isDPadPressed && Input.GetAxisRaw(_inputNamePickUp) > 0.5f)
-            {
-                isDPadPressed = true;
-                HandleDPadLeftPress();
-            }
-            if (isDPadPressed && Input.GetAxisRaw(_inputNamePickUp) <= 0.5f)
-            {
-                isDPadPressed = false;
-            }
+
         }
+    
 
-        void HandleDPadLeftPress()
+            void HandleDPadLeftPress()
         {
             Vector3 forwardForce = -transform.right * _headbutForce;
             _head.AddForce(forwardForce, ForceMode.Impulse);
