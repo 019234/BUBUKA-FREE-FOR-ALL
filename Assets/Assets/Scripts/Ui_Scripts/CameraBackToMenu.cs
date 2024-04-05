@@ -14,6 +14,9 @@ namespace ItsaMeKen
         public GameObject objectLook;
         public Transform targetLook;
 
+        [SerializeField] private GameObject objectToRenable;
+        [SerializeField] private GameObject objectToRenable1;
+
         void Update()
         {
              
@@ -22,6 +25,9 @@ namespace ItsaMeKen
 
                 objectBody.transform.position = targetBody.position;
                 objectLook.transform.position = targetLook.position;
+
+                objectToRenable.SetActive(true);
+                objectToRenable1.SetActive(true);
             }
         }
     }

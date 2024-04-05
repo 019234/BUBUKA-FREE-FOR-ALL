@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 2690612744002977965}
   m_Layer: 6
   m_Name: RightShoulder
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 588795043358514041}
   m_Layer: 6
   m_Name: Ragdoll
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -720,7 +720,7 @@ GameObject:
   - component: {fileID: 8062852083976226882}
   m_Layer: 6
   m_Name: Left_fuckYou
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -950,7 +950,7 @@ GameObject:
   - component: {fileID: 1738466728029055783}
   m_Layer: 6
   m_Name: Head
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1260,7 +1260,7 @@ GameObject:
   - component: {fileID: 4265235355731222144}
   m_Layer: 6
   m_Name: LeftHand
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1614,7 +1614,7 @@ GameObject:
   - component: {fileID: 5874610645947015338}
   m_Layer: 6
   m_Name: Balancer
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1745,14 +1745,11 @@ MonoBehaviour:
   - {fileID: 3614850060845868807}
   _scriptsToDisable:
   - {fileID: 562830969768503804}
-  - {fileID: 0}
   - {fileID: 1546304620803192982}
   - {fileID: 6707816731377027952}
   - {fileID: 2346159456849410004}
-  - {fileID: 6901328605740147986}
   - {fileID: 3011302114395010800}
   - {fileID: 3872731849309174961}
-  - {fileID: 4900860718519672873}
   - {fileID: 3190626142945114805}
   - {fileID: 77851564333796618}
   - {fileID: 4529782065194518074}
@@ -1926,7 +1923,7 @@ GameObject:
   - component: {fileID: 3791425388400955400}
   m_Layer: 6
   m_Name: Right_fuckYou
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2237,7 +2234,7 @@ GameObject:
   - component: {fileID: 4900860718519672873}
   m_Layer: 6
   m_Name: RightFoot
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2409,13 +2406,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 700
+    positionSpring: 9000
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 700
+    positionSpring: 9000
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -2549,7 +2546,7 @@ GameObject:
   - component: {fileID: 4210756554764437861}
   m_Layer: 6
   m_Name: Mover
-  m_TagString: Grabbable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3144,7 +3141,7 @@ GameObject:
   - component: {fileID: 6901328605740147986}
   m_Layer: 6
   m_Name: LeftFoot
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3316,13 +3313,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 700
+    positionSpring: 9000
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 700
+    positionSpring: 9000
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -3374,7 +3371,7 @@ GameObject:
   - component: {fileID: 5835564265435189938}
   m_Layer: 6
   m_Name: RightHand
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3643,7 +3640,7 @@ GameObject:
   - component: {fileID: 5520972648881734191}
   m_Layer: 6
   m_Name: LeftLeg
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4244,7 +4241,7 @@ GameObject:
   - component: {fileID: 8370938115927455015}
   m_Layer: 6
   m_Name: R_Eyes
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4325,7 +4322,7 @@ GameObject:
   - component: {fileID: 8666750853809487128}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4531,7 +4528,7 @@ GameObject:
   - component: {fileID: 2324796851862184532}
   m_Layer: 6
   m_Name: L_Eyes
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4673,7 +4670,7 @@ GameObject:
   - component: {fileID: 3011302114395010800}
   m_Layer: 6
   m_Name: RightThigh
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4924,7 +4921,7 @@ GameObject:
   - component: {fileID: 1640051128205500528}
   m_Layer: 6
   m_Name: RightArm
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5178,7 +5175,7 @@ GameObject:
   - component: {fileID: 6934171980525566669}
   m_Layer: 6
   m_Name: Torso
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5530,7 +5527,7 @@ GameObject:
   - component: {fileID: 4525834321590429343}
   m_Layer: 6
   m_Name: LeftArm
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5798,7 +5795,7 @@ GameObject:
   - component: {fileID: 4529782065194518074}
   m_Layer: 6
   m_Name: LeftShoulder
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6215,7 +6212,7 @@ GameObject:
   - component: {fileID: 3872731849309174961}
   m_Layer: 6
   m_Name: RightLeg
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6468,7 +6465,7 @@ GameObject:
   - component: {fileID: 6707816731377027952}
   m_Layer: 6
   m_Name: LeftThigh
-  m_TagString: Player
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

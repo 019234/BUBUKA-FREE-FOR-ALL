@@ -550,13 +550,13 @@ InputManager:
     axis: 7
     joyNum: 1
   - serializedVersion: 3
-    m_Name: MenuHA
+    m_Name: Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: left ctrl
-    altNegativeButton: 
-    altPositiveButton: joystick button 8
+    positiveButton: 
+    altNegativeButton: d
+    altPositiveButton: a
     gravity: 0
     dead: 0
     sensitivity: 0

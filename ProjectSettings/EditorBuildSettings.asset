@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Maps/Menu/Menu.unity
+    guid: 09341dfd9bd87344ebdf4bb768748b94
+  - enabled: 1
+    path: Assets/Scenes/Maps/Streets/Street.unity
+    guid: 9457d55aca0147a45af1acbc82b97969
+  - enabled: 1
+    path: Assets/Scenes/Maps/Subway/Subway.unity
+    guid: 160bd413f4afa7641a77c8d631b9976c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: fcdf229fe9425e8428af6849eb10248a,
       type: 2}

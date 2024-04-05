@@ -157,10 +157,11 @@ namespace ItsaMeKen
         }
     
 
-            void HandleDPadLeftPress()
+        void HandleDPadLeftPress()
         {
             Vector3 forwardForce = -transform.right * _headbutForce;
             _head.AddForce(forwardForce, ForceMode.Impulse);
+            
         }
         void HandleDPadUpPress()
         {
