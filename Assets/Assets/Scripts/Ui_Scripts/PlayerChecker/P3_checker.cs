@@ -27,8 +27,7 @@ namespace ItsaMeKen
         private IEnumerator ReInitialized()
         {
             yield return new WaitForSeconds(0.5f);
-            playerExists = false;
-            playerCounter = FindObjectOfType<PlayerCounter>();
+            //playerExists = false;
 
         }
 
@@ -48,6 +47,7 @@ namespace ItsaMeKen
                     playerCounter.IncrementPlayerCount();
                 }
             }
+
         }
 
         public bool DoesPlayerExist()

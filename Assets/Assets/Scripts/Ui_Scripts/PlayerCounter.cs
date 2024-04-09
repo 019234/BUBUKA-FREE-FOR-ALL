@@ -7,24 +7,14 @@ namespace ItsaMeKen
 {
     public class PlayerCounter : MonoBehaviour
     {
-        private int playerCount = 0;
+        private static int playerCount = 0;
 
         void Awake()
         {
             DontDestroyOnLoad(gameObject);
-            SceneManager.sceneLoaded += OnSceneLoaded;
+            //SceneManager.sceneLoaded += OnSceneLoaded;
         }
 
-        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-        {
-            StartCoroutine(DeZero());
-        }
-
-        private IEnumerator DeZero()
-        {
-            yield return new WaitForSeconds(0.1f);
-            playerCount = 0;
-        }
 
         public void IncrementPlayerCount()
         {
@@ -45,7 +35,7 @@ namespace ItsaMeKen
 
         void Update()
         {
-            Debug.Log("PlayerCount" + playerCount);
+          // Debug.Log("PlayerCount" + playerCount);
         }
     }
 }

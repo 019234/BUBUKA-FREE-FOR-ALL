@@ -11,6 +11,7 @@ namespace ItsaMeKen
         public GameObject target_Menu;
         public GameObject target_Options;
         public GameObject target_Credits;
+        public GameObject target_Exit;
 
         public void MoveToPlay()
         {
@@ -27,6 +28,10 @@ namespace ItsaMeKen
         public void MoveToCredits()
         {
             transform.position = target_Credits.transform.position;
+        }
+        public void MoveToExit()
+        {
+            transform.position = target_Exit.transform.position;
         }
     }
 }

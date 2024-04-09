@@ -46,7 +46,6 @@ namespace ItsaMeKen
 
         private bool isMoving = false;
         private bool isJumping = false;
-        private bool isDiving = false;
         private bool IsIdleTooLong = false;
 
         void FixedUpdate()
@@ -83,7 +82,7 @@ namespace ItsaMeKen
                 Vector3 airMovement = new Vector3(-verticalInput, 0, horizontalInput).normalized * _airSpeed;
                 _mover.AddForce(airMovement);
             }
-
+            ///////////////////////////////////////////////////////////////////////// JumpInput
             if (IsGrounded() && Input.GetButtonDown(_inputNameJump))
             {
                 isJumping = true;

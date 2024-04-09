@@ -49,7 +49,6 @@ namespace ItsaMeKen
 
         private bool isMoving = false;
         private bool isJumping = false;
-        private bool isDiving = false;
         private bool IsIdleTooLong = false;
         private bool isDPadLeftPressed = false;
 

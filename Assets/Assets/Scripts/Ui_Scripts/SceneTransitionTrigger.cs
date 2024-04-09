@@ -6,7 +6,21 @@ namespace ItsaMeKen
     public class SceneTransitionTrigger : MonoBehaviour
     {
         private int playersInside = 0;
+        private static SceneTransitionTrigger instance;
         private PlayerCounter playerCounter;
+
+        private void Awake()
+        {
+            if (instance == null)
+            {
+                instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
 
         private void Start()
         {

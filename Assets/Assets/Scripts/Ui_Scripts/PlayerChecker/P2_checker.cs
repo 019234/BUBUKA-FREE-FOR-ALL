@@ -12,7 +12,6 @@ namespace ItsaMeKen
 
         private PlayerCounter playerCounter;
 
-        public MonoBehaviour[] _scriptsToToggle;
 
         private void Awake()
         {
@@ -28,8 +27,8 @@ namespace ItsaMeKen
         private IEnumerator ReInitialized()
         {
             yield return new WaitForSeconds(0.5f);
-            playerExists = false;
-            playerCounter = FindObjectOfType<PlayerCounter>();
+            //playerExists = false;
+
         }
 
         void Start()
@@ -42,26 +41,18 @@ namespace ItsaMeKen
             if (!playerExists && Input.GetButtonDown(_inputNameJump))
             {
                 playerExists = true;
-                ToggleScripts();
 
                 if (playerCounter != null)
                 {
                     playerCounter.IncrementPlayerCount();
                 }
             }
+
         }
 
         public bool DoesPlayerExist()
         {
             return playerExists;
-        }
-
-        void ToggleScripts()
-        {
-            foreach (MonoBehaviour script in _scriptsToToggle)
-            {
-                script.enabled = !script.enabled;
-            }
         }
     }
 }
