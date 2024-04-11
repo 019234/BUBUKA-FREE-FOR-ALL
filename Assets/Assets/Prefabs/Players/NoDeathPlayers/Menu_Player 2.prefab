@@ -108,7 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7676421810657219341}
   m_Layer: 0
-  m_Name: Player 2
+  m_Name: Menu_Player 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -981,7 +981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 157eabbd19981e84b969ed8f2fb05886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 1000
+  rotationSpeed: 500
   inputNameHorizontal: HA2
   inputNameVertical: VA2
 --- !u!114 &6928904830562409752
@@ -1036,7 +1036,7 @@ MonoBehaviour:
   - {fileID: 8887785608023658024}
   - {fileID: 937993419672109039}
   _defaultSpring: 500
-  _zeroSpring: 15
+  _zeroSpring: 5
   _inputNameDive: DV2
 --- !u!153 &3090416720244987350
 ConfigurableJoint:
@@ -3365,7 +3365,7 @@ GameObject:
   - component: {fileID: 166078048772576088}
   - component: {fileID: 1683787107556539890}
   - component: {fileID: 8452865994256060340}
-  - component: {fileID: 1478584797927717964}
+  - component: {fileID: 434742376640142290}
   m_Layer: 0
   m_Name: Head
   m_TagString: Grabbable
@@ -3552,7 +3552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CopyLimbs: {fileID: 7272378185415548713}
---- !u!114 &1478584797927717964
+--- !u!114 &434742376640142290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3561,10 +3561,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4861663474913687034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71e8d3c55fe521a41ad51abb5e8b0e01, type: 3}
+  m_Script: {fileID: 11500000, guid: 085c072ba71668149b3c6e987df2c2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceThreshold: 10
+  forceThreshold: 15
   _targetJoints:
   - {fileID: 1827070666046519308}
   - {fileID: 381948557822275576}
@@ -3609,9 +3609,9 @@ MonoBehaviour:
   - {fileID: 8887785608023658024}
   - {fileID: 937993419672109039}
   - {fileID: 6928904830562409752}
-  _zeroSpring: 15
+  _zeroSpring: 5
   _defaultSpring: 500
-  _maxZeroSpringCount: 3
+  _maxZeroSpringCount: 99
 --- !u!1 &4932694824996801029
 GameObject:
   m_ObjectHideFlags: 0
@@ -4647,7 +4647,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 981eb941e918f8945a0d2cb68c206697, type: 2}
+  - {fileID: 2100000, guid: 785949a9e75ac8e4c94463fe6885c45b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

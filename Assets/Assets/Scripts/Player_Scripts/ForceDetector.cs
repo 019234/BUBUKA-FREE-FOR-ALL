@@ -15,18 +15,24 @@ namespace itsaMeKen
 
         private int _zeroSpringCount = 0;
         private bool _isPermanentZeroSpring = false;
+        private bool _isDead = false;
+        private bool _unconscious = false;
+        private bool _debug = false;
+
+
 
         private void OnCollisionEnter(Collision collision)
         {
             if (!_isPermanentZeroSpring && collision.relativeVelocity.magnitude >= forceThreshold)
             {
-                // Print the force
+                
                 Debug.Log("Collision Force: " + collision.relativeVelocity.magnitude);
 
-                // Set joints' spring to zero
+                _unconscious = true;
+
                 SetPositionSpringToPress(_zeroSpring);
 
-                // Disable target scripts
+              
                 foreach (Behaviour script in targetScripts)
                 {
                     if (script != null)
@@ -35,24 +41,46 @@ namespace itsaMeKen
                     }
                 }
 
-                // Increment zero spring count
                 _zeroSpringCount++;
 
-                // Check if it reached the maximum zero springs
                 if (_zeroSpringCount >= _maxZeroSpringCount)
                 {
-                    // Set joints' spring permanently to zero
+
                     SetPositionSpringToPress(_zeroSpring);
 
-                    // Mark as permanently set to zero
                     _isPermanentZeroSpring = true;
                 }
                 else
                 {
-                    // Reset joints' spring to default after 10 seconds
+                    
                     StartCoroutine(ResetToDefaultSpringAfterDelay(10f));
+
                 }
             }
+        }
+
+        public void Update()
+        {
+            if (_isPermanentZeroSpring)
+            {
+                if (!_isDead)
+                {
+                    _isDead = true;
+                    Debug.Log("Object is permanently dead.");
+                }
+            }
+
+            if (_unconscious)
+            {
+                if (!_debug)
+                {
+                    _debug = true;
+                    Debug.Log("this nigga asleep");
+                }
+                
+            }
+
+
         }
 
         void SetPositionSpringToPress(float spring)
@@ -73,10 +101,10 @@ namespace itsaMeKen
         {
             yield return new WaitForSeconds(delay);
 
-            // Set joints' spring back to default
             SetPositionSpringToPress(_defaultSpring);
 
-            // Enable target scripts
+            _unconscious = false;
+
             foreach (Behaviour script in targetScripts)
             {
                 if (script != null)

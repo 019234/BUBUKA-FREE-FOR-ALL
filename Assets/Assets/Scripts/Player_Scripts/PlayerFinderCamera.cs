@@ -12,6 +12,7 @@ public class AddToGameObjectChildren : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -19,7 +20,7 @@ public class AddToGameObjectChildren : MonoBehaviour
             return;
         }
 
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        
     }
 
     void Start()

@@ -108,7 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7676421810657219341}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -891,9 +891,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4573610061146674759}
   - component: {fileID: 8095046057622578079}
-  - component: {fileID: 8887785608023658024}
+  - component: {fileID: 9160302968554118201}
   - component: {fileID: 937993419672109039}
-  - component: {fileID: 6928904830562409752}
+  - component: {fileID: 2480306908674208317}
   - component: {fileID: 3090416720244987350}
   - component: {fileID: 142877255255103201}
   - component: {fileID: 9063736899988863290}
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Body: {fileID: 2422295213048645318}
---- !u!114 &8887785608023658024
+--- !u!114 &9160302968554118201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2580875062883954666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5427676d94dd38f4283d38d5136ff541, type: 3}
+  m_Script: {fileID: 11500000, guid: b7c2c1aaba3fc474cb3932b66512c37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _anim: {fileID: 4739282093516202396}
@@ -963,12 +963,12 @@ MonoBehaviour:
   idleThreshold: 0.1
   idleTimeThreshold: 45
   moveThreshold: 0.1
-  _inputNameHorizontal: HA1
-  _inputNameVertical: VA1
-  _inputNameJump: JP1
-  _inputNameGrabRight: RG1
-  _inputNameGrabLeft: LG1
-  _inputNameDive: DV1
+  _inputNameHorizontal: HA3
+  _inputNameVertical: VA3
+  _inputNameJump: JP3
+  _inputNameGrabRight: RG3
+  _inputNameGrabLeft: LG3
+  _inputNameDive: DV3
 --- !u!114 &937993419672109039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,10 +981,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 157eabbd19981e84b969ed8f2fb05886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 1000
-  inputNameHorizontal: HA1
-  inputNameVertical: VA1
---- !u!114 &6928904830562409752
+  rotationSpeed: 500
+  inputNameHorizontal: HA3
+  inputNameVertical: VA3
+--- !u!114 &2480306908674208317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -993,7 +993,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2580875062883954666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd9cdb4440d63744b42bba1959f6c83, type: 3}
+  m_Script: {fileID: 11500000, guid: 66f32a5103d0e3c44b58e981931bae0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _targetJoints:
@@ -1010,10 +1010,12 @@ MonoBehaviour:
   - {fileID: 6532132136694490823}
   - {fileID: 3925377718504397542}
   - {fileID: 5068185814996830179}
+  - {fileID: 6570615450580326149}
   - {fileID: 4752408794269555351}
   - {fileID: 3574475899258924431}
   - {fileID: 7414965280964863639}
   - {fileID: 3727594216730874538}
+  - {fileID: 7926850186936400369}
   _scriptsToDisable:
   - {fileID: 5870666764587660188}
   - {fileID: 4911590063184825326}
@@ -1028,16 +1030,18 @@ MonoBehaviour:
   - {fileID: 2838415005899888850}
   - {fileID: 3780262358751994190}
   - {fileID: 3063606920555307384}
+  - {fileID: 7702452158654880876}
   - {fileID: 8480433655304715595}
   - {fileID: 5318174696997865000}
   - {fileID: 7684267301756288894}
   - {fileID: 5438871104444221702}
-  - {fileID: 8095046057622578079}
-  - {fileID: 8887785608023658024}
+  - {fileID: 8551590534238664376}
   - {fileID: 937993419672109039}
+  - {fileID: 9160302968554118201}
+  - {fileID: 8095046057622578079}
   _defaultSpring: 500
-  _zeroSpring: 15
-  _inputNameDive: DV1
+  _zeroSpring: 5
+  _inputNameDive: DV3
 --- !u!153 &3090416720244987350
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -1852,7 +1856,7 @@ GameObject:
   - component: {fileID: 4537473597787057655}
   - component: {fileID: 1827070666046519308}
   - component: {fileID: 5870666764587660188}
-  - component: {fileID: 3483138034013184196}
+  - component: {fileID: 7793561841890538186}
   m_Layer: 0
   m_Name: Hips
   m_TagString: Player
@@ -2020,7 +2024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CopyLimbs: {fileID: 6116569579013385057}
---- !u!135 &3483138034013184196
+--- !u!135 &7793561841890538186
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3150,7 +3154,7 @@ MonoBehaviour:
   _grabRange: 0.1
   _throwForce: 10
   _grabTimeLimit: 8
-  _inputNameGrab: RG1
+  _inputNameGrab: RG3
 --- !u!1 &4746985410637199504
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,7 +3369,7 @@ GameObject:
   - component: {fileID: 166078048772576088}
   - component: {fileID: 1683787107556539890}
   - component: {fileID: 8452865994256060340}
-  - component: {fileID: 1555721872938883461}
+  - component: {fileID: 3234943827977746600}
   m_Layer: 0
   m_Name: Head
   m_TagString: Grabbable
@@ -3552,7 +3556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CopyLimbs: {fileID: 7272378185415548713}
---- !u!114 &1555721872938883461
+--- !u!114 &3234943827977746600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3561,11 +3565,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4861663474913687034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71e8d3c55fe521a41ad51abb5e8b0e01, type: 3}
+  m_Script: {fileID: 11500000, guid: 72c067ea7b07748498fdeee281573c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   forceThreshold: 15
   _targetJoints:
+  - {fileID: 1827070666046519308}
   - {fileID: 381948557822275576}
   - {fileID: 7221310131516943991}
   - {fileID: 231020602694468355}
@@ -3584,8 +3589,8 @@ MonoBehaviour:
   - {fileID: 7414965280964863639}
   - {fileID: 3727594216730874538}
   - {fileID: 7926850186936400369}
-  - {fileID: 1827070666046519308}
   targetScripts:
+  - {fileID: 5870666764587660188}
   - {fileID: 4911590063184825326}
   - {fileID: 9189154805772478687}
   - {fileID: 7894719211502770671}
@@ -3604,12 +3609,11 @@ MonoBehaviour:
   - {fileID: 7684267301756288894}
   - {fileID: 5438871104444221702}
   - {fileID: 8551590534238664376}
-  - {fileID: 5870666764587660188}
   - {fileID: 8095046057622578079}
-  - {fileID: 8887785608023658024}
+  - {fileID: 9160302968554118201}
   - {fileID: 937993419672109039}
-  - {fileID: 6928904830562409752}
-  _zeroSpring: 15
+  - {fileID: 2480306908674208317}
+  _zeroSpring: 10
   _defaultSpring: 500
   _maxZeroSpringCount: 3
 --- !u!1 &4932694824996801029
@@ -3995,13 +3999,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5638062876931227080}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.69933915, y: 0.12181071, z: 0.0766479, w: 0.70015156}
-  m_LocalPosition: {x: -0.00704, y: 0.00883, z: -0.00039}
+  m_LocalRotation: {x: -0.666777, y: 0.24405292, z: -0.050879404, w: 0.70232326}
+  m_LocalPosition: {x: -0.00709, y: 0.00885, z: -0.00039}
   m_LocalScale: {x: -0.14667721, y: -0.14667721, z: -0.21}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4432507002785184505}
-  m_LocalEulerAnglesHint: {x: -86.339, y: 97.041, z: -80.898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7577743607616609913
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4333,7 +4337,7 @@ MonoBehaviour:
   _grabRange: 0.1
   _throwForce: 10
   _grabTimeLimit: 8
-  _inputNameGrab: LG1
+  _inputNameGrab: LG3
 --- !u!1 &5816571228545110321
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,7 +4611,7 @@ GameObject:
   - component: {fileID: 1144239630560570755}
   m_Layer: 0
   m_Name: Model
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4647,7 +4651,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 981eb941e918f8945a0d2cb68c206697, type: 2}
+  - {fileID: 2100000, guid: 46b41eb1f583ff94e9e276171e0dd0e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

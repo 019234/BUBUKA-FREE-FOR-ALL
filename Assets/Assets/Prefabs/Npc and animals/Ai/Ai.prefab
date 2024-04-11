@@ -3869,7 +3869,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _zeroSpring: 15
+  _zeroSpring: 5
   _defaultSpring: 500
   _maxZeroSpringCount: 3
 --- !u!1 &7404272558716091991

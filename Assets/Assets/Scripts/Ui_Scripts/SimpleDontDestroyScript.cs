@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class SimpleDontDestroyScript : MonoBehaviour
 {
-    private void Awake()
+    private static SimpleDontDestroyScript instance;
+    void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+
     }
 }
