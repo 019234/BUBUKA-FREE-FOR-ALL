@@ -11,6 +11,7 @@ TagManager:
   - P2
   - P3
   - P4
+  - HandFeet
   layers:
   - Default
   - TransparentFX

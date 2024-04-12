@@ -165,6 +165,16 @@ namespace ItsaMeKen
         //Next scene if only 1 player remains
         // but the players are instantiated, the second player 1 enters it goes directly to next level.
 
+        public void IncrementHeadCount()
+        {
+            headCount++;
+        }
+
+        public void DecrementHeadCount()
+        {
+            headCount--;
+        }
+
 
         public int GetPlayerHead()
         {

@@ -12,7 +12,6 @@ public class AddToGameObjectChildren : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -20,17 +19,23 @@ public class AddToGameObjectChildren : MonoBehaviour
             return;
         }
 
-        
+        SceneManager.sceneLoaded += OnSceneLoaded;  
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded; 
+    }
+
+     
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ApplyTargetGroupLogic();
     }
 
     void Start()
     {
-        ApplyTargetGroupLogic();
-    }
-
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        ApplyTargetGroupLogic();
+        ApplyTargetGroupLogic();  
     }
 
     void ApplyTargetGroupLogic()
@@ -40,6 +45,8 @@ public class AddToGameObjectChildren : MonoBehaviour
 
         if (targetGroup != null)
         {
+            targetGroup.m_Targets = new CinemachineTargetGroup.Target[0]; 
+
             foreach (GameObject player in players)
             {
                 targetGroup.AddMember(player.transform, 1f, 0f);

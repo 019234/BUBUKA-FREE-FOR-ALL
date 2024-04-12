@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 231919610112191950}
   m_Layer: 0
   m_Name: RightFoot_end
-  m_TagString: Grabbable
+  m_TagString: HandFeet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2951,7 +2951,7 @@ GameObject:
   - component: {fileID: 1198742516377842204}
   m_Layer: 0
   m_Name: RightFist_end
-  m_TagString: Grabbable
+  m_TagString: HandFeet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3786,7 +3786,7 @@ GameObject:
   - component: {fileID: 7894719211502770671}
   m_Layer: 0
   m_Name: LeftFoot_end
-  m_TagString: Grabbable
+  m_TagString: HandFeet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4134,7 +4134,7 @@ GameObject:
   - component: {fileID: 6475073659815150605}
   m_Layer: 0
   m_Name: LeftFist_end
-  m_TagString: Grabbable
+  m_TagString: HandFeet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

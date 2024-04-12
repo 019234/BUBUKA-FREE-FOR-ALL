@@ -25,7 +25,7 @@ namespace ItsaMeKen
 
         void OnCollisionEnter(Collision collision)
         {
-            if (hasExploded || !collision.gameObject.CompareTag("Player"))
+            if (hasExploded || !collision.gameObject.CompareTag("HandFeet"))
                 return;
 
             _anim.SetBool("Fuse_lit", true);
