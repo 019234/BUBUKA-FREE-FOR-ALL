@@ -1,19 +1,22 @@
 using UnityEngine;
-using UnityEngine.AI;
 
 namespace ItsaMeKen
 {
     public class Ai_Look : MonoBehaviour
     {
-        public Transform target;
+        public string targetTag = "Player"; // Tag of the target GameObject
         public float rotationSpeed = 50f;
 
         void Update()
         {
-            if (target != null)
+            // Find all GameObjects with the specified tag
+            GameObject[] targets = GameObject.FindGameObjectsWithTag(targetTag);
+
+            // Rotate towards each target
+            foreach (GameObject target in targets)
             {
                 // Calculate the direction to the target
-                Vector3 directionToTarget = target.position - transform.position;
+                Vector3 directionToTarget = target.transform.position - transform.position;
 
                 // Ignore the vertical component to keep the rotation only around the Y-axis
                 directionToTarget.y = 0f;
@@ -25,5 +28,3 @@ namespace ItsaMeKen
         }
     }
 }
-
-
