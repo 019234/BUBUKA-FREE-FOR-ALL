@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Maps/0.0 Opening/Opening.unity
+    path: Assets/0.2 Scenes/Maps/0.0 Opening/Opening.unity
     guid: e5f74341ef817c940b5a5afbcfbb2aa4
   - enabled: 1
-    path: Assets/Scenes/Maps/0.1 Menu/Menu.unity
+    path: Assets/0.2 Scenes/Maps/0.1 Menu/Menu.unity
     guid: 09341dfd9bd87344ebdf4bb768748b94
   - enabled: 1
-    path: Assets/Scenes/Maps/0.2 Streets/Street.unity
+    path: Assets/0.2 Scenes/Maps/0.2 Streets/Street.unity
     guid: 9457d55aca0147a45af1acbc82b97969
   - enabled: 1
-    path: Assets/Scenes/Maps/0.3 Subway/Subway.unity
+    path: Assets/0.2 Scenes/Maps/0.3 Subway/Subway.unity
     guid: 160bd413f4afa7641a77c8d631b9976c
+  - enabled: 1
+    path: Assets/0.2 Scenes/Maps/0.6 Top of a Building/Top of a Building.unity
+    guid: b130a80836d73f74383f43641b04ab5b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: fcdf229fe9425e8428af6849eb10248a,
       type: 2}

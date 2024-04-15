@@ -12,6 +12,8 @@ TagManager:
   - P3
   - P4
   - HandFeet
+  - Dead
+  - killZone
   layers:
   - Default
   - TransparentFX
