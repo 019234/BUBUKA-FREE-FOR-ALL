@@ -30,6 +30,59 @@ namespace ItsaMeKen
             isAlive = true;
         }
 
+        public void Update()
+        {
+            if (_isPermanentZeroSpring)
+            {
+                isAlive = false;
+
+                if (objectToChangeTag != null)
+                {
+                    objectToChangeTag.tag = newTag;
+                }
+            }
+
+            if (_unconscious)
+            {
+                isAsleep = true;
+            }
+            else if (!_unconscious)
+            {
+                isAsleep = false;
+            }
+        }
+
+        void SetPositionSpringToPress(float spring)
+        {
+            foreach (ConfigurableJoint joint in _targetJoints)
+            {
+                JointDrive xDrive = joint.angularXDrive;
+                xDrive.positionSpring = spring;
+                joint.angularXDrive = xDrive;
+
+                JointDrive yzDrive = joint.angularYZDrive;
+                yzDrive.positionSpring = spring;
+                joint.angularYZDrive = yzDrive;
+            }
+        }
+
+        IEnumerator ResetToDefaultSpringAfterDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+
+            _unconscious = false;
+
+            SetPositionSpringToPress(_defaultSpring);
+
+            foreach (Behaviour script in targetScripts)
+            {
+                if (script != null)
+                {
+                    script.enabled = true;
+                }
+            }
+        }
+
         private void OnCollisionEnter(Collision collision)
         {
             if (!_isPermanentZeroSpring && collision.relativeVelocity.magnitude >= forceThreshold)
@@ -66,32 +119,22 @@ namespace ItsaMeKen
                     isAlive = true;
                 }
             }
-
-            if (collision.gameObject.CompareTag("killZone"))
-            {
-                isAlive = false;
-            }
         }
 
-        public void Update()
+        private void OnTriggerEnter(Collider other)
         {
-            if (_isPermanentZeroSpring)
+            if (other.CompareTag("killZone"))
             {
                 isAlive = false;
+                SetPositionSpringToPress(_zeroSpring);
 
-                if (objectToChangeTag != null)
+                foreach (Behaviour script in targetScripts)
                 {
-                    objectToChangeTag.tag = newTag;
+                    if (script != null)
+                    {
+                        script.enabled = false;
+                    }
                 }
-            }
-
-            if (_unconscious)
-            {
-                isAsleep = true;
-            }
-            else if (!_unconscious)
-            {
-                isAsleep = false;
             }
         }
 
@@ -103,37 +146,6 @@ namespace ItsaMeKen
         public bool IsSleeping()
         {
             return isAsleep;
-        }
-
-        void SetPositionSpringToPress(float spring)
-        {
-            foreach (ConfigurableJoint joint in _targetJoints)
-            {
-                JointDrive xDrive = joint.angularXDrive;
-                xDrive.positionSpring = spring;
-                joint.angularXDrive = xDrive;
-
-                JointDrive yzDrive = joint.angularYZDrive;
-                yzDrive.positionSpring = spring;
-                joint.angularYZDrive = yzDrive;
-            }
-        }
-
-        IEnumerator ResetToDefaultSpringAfterDelay(float delay)
-        {
-            yield return new WaitForSeconds(delay);
-
-            _unconscious = false;
-
-            SetPositionSpringToPress(_defaultSpring);
-
-            foreach (Behaviour script in targetScripts)
-            {
-                if (script != null)
-                {
-                    script.enabled = true;
-                }
-            }
         }
     }
 }

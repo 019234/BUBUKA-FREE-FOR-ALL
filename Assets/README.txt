@@ -8,3 +8,46 @@ For the player, adjust each variables for their controls HA1 means Horizontal Ax
 Bomb idea, Add an effect on spark, make a cable script, it has an start and an end, with time, the spark will consume the cable
 
 
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+fuck me
+
