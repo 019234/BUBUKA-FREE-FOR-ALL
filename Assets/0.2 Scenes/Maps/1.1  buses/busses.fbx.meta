@@ -1,0 +1,354 @@
+fileFormatVersion: 2
+guid: 9fac33e3512d75a49be305135d97dd75
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black.001
+    second: {fileID: 2100000, guid: b051910d93bfdfe4ab1ffcada939e1f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Car rubber wheel
+    second: {fileID: 2100000, guid: c0022605ac1abb84cbe0b84bad405bc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete
+    second: {fileID: 2100000, guid: ce8cdcaf7c91d2b47bf61cd4aa5c9b45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass.001
+    second: {fileID: 2100000, guid: 7e56fb0b5529a7341bb8fe3cba7a9c57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey.001
+    second: {fileID: 2100000, guid: df837c2e5f7689546a52d0a7c0a63fdb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey.002
+    second: {fileID: 2100000, guid: 09c3d2e2da230a5499ec1d17fab3fe00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Headlights.001
+    second: {fileID: 2100000, guid: 736e2439dfef2e34a9b783fbe2770b22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Headlights.002
+    second: {fileID: 2100000, guid: 9f835b082ba3e0b49ba7ecd3bbf56ec8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IKEA-CHILDRENS_BENCH_YPPERLIG-BEECH_DARK_RED
+    second: {fileID: 2100000, guid: 3122d4f0c9cc899409d4683f7aba7795, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 94670add9fc186145bc05a5a3fc8c1b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: c8979eaa97ac6b843bf0df257a22bc68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: ba8e6b2ea8390f6489cbb7b1b557a061, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: b76abc1f332e510448ed3e724a8ff291, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: 05cb615970fb71b4f883e273c39dca2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: 0b29061e85467a149b54d01eabc5b8b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.010
+    second: {fileID: 2100000, guid: 04ce2e8bd6c0140448329eae43f71755, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: 78ce517a3173aa741ba6a70066932001, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: 66734db1425917348a3a38ce0160b892, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.013
+    second: {fileID: 2100000, guid: b03b6206314baa546809334bf826b8c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic Blue
+    second: {fileID: 2100000, guid: 8c110c559b40695428d30a242c97fe44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic Blue.001
+    second: {fileID: 2100000, guid: edb0a4cb305d1854dba52ff0b5418bb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic Blue.002
+    second: {fileID: 2100000, guid: 772a8c8fd2be7ed45a6d619866beca7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic Blue.003
+    second: {fileID: 2100000, guid: 212b3b69d8943a94a9f3c29ae6366790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic Blue.004
+    second: {fileID: 2100000, guid: a7840df436e8f8c47a8b59dc62ff0c5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Road
+    second: {fileID: 2100000, guid: 88e4af4bcfb546b46a5e4d2d1f6f0f42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TailLights.001
+    second: {fileID: 2100000, guid: 09fc353dce7b23f42a34fb8b5ac8dfc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TailLights.002
+    second: {fileID: 2100000, guid: ac1baf5081ace4a4ba3cc54b6160d5e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zinc steel 02 clean
+    second: {fileID: 2100000, guid: 496361849e24672419ddc5c2bf925370, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: direzione_obbligatoria
+    second: {fileID: 2100000, guid: 7f5c717f4013ec9489e9aad26c5ea610, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: a75bc17d820225745b1c10282feca966, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_bulloni
+    second: {fileID: 2100000, guid: fa5aab43a76a9c64a9c98f0e3efa0672, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_bulloni.002
+    second: {fileID: 2100000, guid: e72a33f69e7898943b6c3bb5314e368d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metallo_palo.001
+    second: {fileID: 2100000, guid: 68cd80bcabd8c8b43ad233d16b661f60, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 50348668-IKEA-CHILDRENS_BENCH_YPPERLIG-BEECH_DARK_RED_BaseColor
+    second: {fileID: 2800000, guid: 9d37d1daf8c07164aaaccc895c7735e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 50348668-IKEA-CHILDRENS_BENCH_YPPERLIG-BEECH_DARK_RED_Metallic
+    second: {fileID: 2800000, guid: aaa875454a0f48042bbe5a633cd18f87, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 50348668-IKEA-CHILDRENS_BENCH_YPPERLIG-BEECH_DARK_RED_Normal
+    second: {fileID: 2800000, guid: 23c3d08ba7eafb14f8de924ae50dca6b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 50348668-IKEA-CHILDRENS_BENCH_YPPERLIG-BEECH_DARK_RED_Roughness
+    second: {fileID: 2800000, guid: 8b8eab76355ac364c93c540c158f63ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Plastic_Blue_Can_normal
+    second: {fileID: 2800000, guid: 4f003c858b401c946882cd9202bb9168, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: grass-1_diffuse
+    second: {fileID: 2800000, guid: ec053e6d7f0294a4b9089e96cd8e83cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: grass-1_smooth
+    second: {fileID: 2800000, guid: fb50ba0e68585a34fb1834f5a0f2470f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: palo_metallo_palo_Color
+    second: {fileID: 2800000, guid: 50db64797d77e31419dc16cb156619bf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: palo_metallo_palo_Metallic
+    second: {fileID: 2800000, guid: 12da60085dda6704ca58624b86ed5fac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: palo_metallo_palo_Roughness
+    second: {fileID: 2800000, guid: af70f063349c832418833db46c75ccb2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: riflessioni
+    second: {fileID: 2800000, guid: 56d9b172162dabf4583b9452334d92df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: signs
+    second: {fileID: 2800000, guid: a4d6ed5e20eef9c42a89177484e0c311, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sss
+    second: {fileID: 2800000, guid: 5e43c1c233f755345aeb24a61972aafb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wall_diffuse
+    second: {fileID: 2800000, guid: 148a514503030044483c2bd325c1b55d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wall_normal
+    second: {fileID: 2800000, guid: 77df9ee6209fec1469396bb2330ed84d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wall_roughness
+    second: {fileID: 2800000, guid: 4c87906c1d64d5743b6f870b04faa926, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 1
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

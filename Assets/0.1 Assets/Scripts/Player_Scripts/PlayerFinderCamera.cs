@@ -1,43 +1,20 @@
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using System.Collections;
 
 namespace ItsaMeKen
 {
     public class AddToGameObjectChildren : MonoBehaviour
     {
-        private static AddToGameObjectChildren instance;
-
-        void Awake()
-        {
-            if (instance == null)
-            {
-                instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            SceneManager.sceneLoaded += OnSceneLoaded;
-        }
-
-        void OnDestroy()
-        {
-            SceneManager.sceneLoaded -= OnSceneLoaded;
-        }
-
-
-        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-        {
-            ApplyTargetGroupLogic();
-        }
-
         void Start()
         {
+            StartCoroutine(FindEm());
+        }
+
+        private IEnumerator FindEm()
+        {
+            yield return new WaitForSeconds(0.01f);
             ApplyTargetGroupLogic();
         }
 
@@ -52,7 +29,6 @@ namespace ItsaMeKen
 
                 foreach (GameObject player in players)
                 {
-
                     if (player.CompareTag("Player"))
                     {
                         targetGroup.AddMember(player.transform, 1f, 0f);

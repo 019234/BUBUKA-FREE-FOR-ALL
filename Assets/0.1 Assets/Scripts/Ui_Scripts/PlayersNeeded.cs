@@ -9,7 +9,10 @@ namespace ItsaMeKen
 
         private int playersNeeded = 2;
         private PlayerCounter playerCounter;
+        [SerializeField] private GameObject pause;
+        [SerializeField] private GameObject uiManager;
         public MonoBehaviour[] _scriptsToDisable;
+
 
  
         void Start()
@@ -20,9 +23,12 @@ namespace ItsaMeKen
  
         void Update()
         {
-            if (playersNeeded == playerCounter.GetPlayerCount()) //if the PlayerNeeded equals to playerCount this will happened
+            if (playersNeeded == playerCounter.GetPlayerCount()) 
             {
                 DisableScripts(false);
+                pause.SetActive(true);
+                uiManager.SetActive(false);
+
             }
             else
             {

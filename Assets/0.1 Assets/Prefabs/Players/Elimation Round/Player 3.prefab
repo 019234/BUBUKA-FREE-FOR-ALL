@@ -949,8 +949,8 @@ MonoBehaviour:
   _mover: {fileID: 4537473597787057655}
   _speed: 25
   _airSpeed: 2.5
-  _jumpPower: 60
-  _forwardJumpForce: 2
+  _jumpPower: 90
+  _forwardJumpForce: 3
   _groundCheckDistance: 0.7
   _groundLayer:
     serializedVersion: 2
@@ -1054,7 +1054,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 1.6090057, y: 0.94359994, z: 1.3598199}
+  m_ConnectedAnchor: {x: 1.7249457, y: 0.684, z: 1.3565984}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -1169,7 +1169,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!138 &9063736899988863290
 FixedJoint:
@@ -2043,7 +2043,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.01
+  m_Radius: 0.005
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3297273169498160600
 GameObject:
@@ -2723,7 +2723,7 @@ GameObject:
   - component: {fileID: 4911590063184825326}
   m_Layer: 0
   m_Name: LeftAss
-  m_TagString: Untagged
+  m_TagString: P3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3724,7 +3724,7 @@ GameObject:
   - component: {fileID: 2607800018656940268}
   m_Layer: 0
   m_Name: Armature
-  m_TagString: Untagged
+  m_TagString: P3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

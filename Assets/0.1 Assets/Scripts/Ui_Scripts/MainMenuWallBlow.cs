@@ -18,7 +18,7 @@ namespace ItsaMeKen
         [SerializeField] private GameObject escapeObject;
         [SerializeField] private GameObject defaultLight;
         [SerializeField] private GameObject hanging;
-        [SerializeField] private GameObject pause;
+        [SerializeField] private GameObject uiManager;
         [SerializeField] private GameObject eventSystem;
 
         [SerializeField] private CinemachineVirtualCamera cinemachineCamera;
@@ -36,6 +36,7 @@ namespace ItsaMeKen
 
         private void Start()
         {
+            
             StartCoroutine(ActivateDuckAndExplosion());
         }
 
@@ -82,7 +83,7 @@ namespace ItsaMeKen
                 //ability to go back
                 escapeObject.SetActive(false);
                 eventSystem.SetActive(false);
-                pause.SetActive(true);
+                uiManager.SetActive(false);
                 anotherLightToOff.SetActive(false);
 
                 //LightsObject

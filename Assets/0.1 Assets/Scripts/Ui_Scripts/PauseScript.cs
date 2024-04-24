@@ -1,57 +1,42 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-/// <summary>
-/// Pause in anyGame, it doesn't stop time, it reappears in any levels. press Escape
-/// </summary>
-/// 
-
-public class PauseScript : MonoBehaviour
+namespace itsaMeKen
 {
-    public KeyCode keyToPress;
-
-    [SerializeField] private GameObject canvas;
-    [SerializeField] private int sceneIndexToLoad;
-
-    private static PauseScript instance;
-
-    private void Awake()
+    public class PauseScript : MonoBehaviour
     {
-        if (instance == null)
+        public KeyCode keyToPress;
+
+        [SerializeField] private GameObject canvas;
+        [SerializeField] private int sceneIndexToLoad;
+        private bool isPaused = false;
+
+        void Update()
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            if (Input.GetKeyDown(keyToPress))
+            {
+                isPaused = !isPaused;
+                canvas.SetActive(isPaused);
+            }
         }
-        else
-        { 
-            Destroy(gameObject);
-        }
-    }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(keyToPress))
+        public void Restart()
         {
-            canvas.SetActive(true);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-    }
 
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void SkipToNextScene()
-    {
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        public void SkipToNextScene()
         {
-            SceneManager.LoadScene(nextSceneIndex);
+            int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+            {
+                SceneManager.LoadScene(nextSceneIndex);
+            }
         }
-    }
 
-    public void LoadSceneByIndex()
-    {
-        SceneManager.LoadScene(sceneIndexToLoad);
+        public void LoadSceneByIndex()
+        {
+            SceneManager.LoadScene(sceneIndexToLoad);
+        }
     }
 }

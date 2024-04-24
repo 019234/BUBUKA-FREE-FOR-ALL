@@ -900,7 +900,7 @@ GameObject:
   - component: {fileID: 583738209073169586}
   m_Layer: 0
   m_Name: Balancer
-  m_TagString: Untagged
+  m_TagString: P1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -949,8 +949,8 @@ MonoBehaviour:
   _mover: {fileID: 4537473597787057655}
   _speed: 25
   _airSpeed: 2.5
-  _jumpPower: 60
-  _forwardJumpForce: 2
+  _jumpPower: 90
+  _forwardJumpForce: 3
   _groundCheckDistance: 0.7
   _groundLayer:
     serializedVersion: 2
@@ -1165,7 +1165,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!138 &9063736899988863290
 FixedJoint:
@@ -2039,7 +2039,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.01
+  m_Radius: 0.005
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3297273169498160600
 GameObject:
