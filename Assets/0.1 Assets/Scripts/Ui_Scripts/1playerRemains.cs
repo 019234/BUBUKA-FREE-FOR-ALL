@@ -13,6 +13,8 @@ namespace ItsaMeKen
         private bool p3 = false;
         private bool p4 = false;
 
+        public GameObject blur;
+
         public GameObject win1;
         public GameObject win2;
         public GameObject win3;
@@ -88,21 +90,25 @@ namespace ItsaMeKen
             if (p1 && !p2 && !p3 && !p4)
             {
                 win1.SetActive(true);
+                blur.SetActive(true);
                 StartFadeOutTransition();
             }
             else if (!p1 && p2 && !p3 && !p4)
             {
                 win2.SetActive(true);
+                blur.SetActive(true);
                 StartFadeOutTransition();
             }
             else if (!p1 && !p2 && p3 && !p4)
             {
                 win3.SetActive(true);
+                blur.SetActive(true);
                 StartFadeOutTransition();
             }
             else if (!p1 && !p2 && !p3 && p4)
             {
                 win4.SetActive(true);
+                blur.SetActive(true);
                 StartFadeOutTransition();
             }
         }

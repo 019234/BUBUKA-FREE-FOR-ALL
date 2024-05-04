@@ -18,6 +18,7 @@ namespace ItsaMeKen
         [SerializeField] private GameObject objectToRenable1;
         [SerializeField] private GameObject objectToRenable2;
         [SerializeField] private GameObject objectToRenable3;
+        [SerializeField] private GameObject eventSystemOptions; 
 
 
 
@@ -34,6 +35,7 @@ namespace ItsaMeKen
                 objectToRenable1.SetActive(true);
                 objectToRenable2.SetActive(true);
                 objectToRenable3.SetActive(true);
+                eventSystemOptions.SetActive(false);
 
             }
         }

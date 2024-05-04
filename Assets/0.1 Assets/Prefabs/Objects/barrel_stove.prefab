@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7219817172227786064}
   - component: {fileID: 1982876768801190042}
   - component: {fileID: 8912560336536643701}
+  - component: {fileID: 224984899871166410}
   m_Layer: 0
   m_Name: barrel_stove
   m_TagString: Untagged
@@ -134,3 +135,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3658360658799000412, guid: 34f8d5e26309d5d44a710184f052c77f, type: 3}
+--- !u!114 &224984899871166410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5677129827369669239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7669231f939849a43b3bc676779c296d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSoundClips:
+  - {fileID: 8300000, guid: cccec0c8dd3c2a7469cc6401944d92b5, type: 3}
+  - {fileID: 8300000, guid: ff0647ae693d7764a94fb7b7cc116f23, type: 3}
+  - {fileID: 8300000, guid: 94189df0f0803bb469a39f9541dbb2c4, type: 3}

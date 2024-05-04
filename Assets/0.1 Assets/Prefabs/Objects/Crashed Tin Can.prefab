@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8189957951551277081}
   - component: {fileID: 8382437496186826356}
   - component: {fileID: 8224018738421377212}
+  - component: {fileID: 8140550667841613906}
   m_Layer: 0
   m_Name: Crashed Tin Can
   m_TagString: Untagged
@@ -135,3 +136,19 @@ CapsuleCollider:
   m_Height: 0.0015152887
   m_Direction: 1
   m_Center: {x: 0.00007192856, y: 0.000053406504, z: 0.0004078159}
+--- !u!114 &8140550667841613906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6247279116018686274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7669231f939849a43b3bc676779c296d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSoundClips:
+  - {fileID: 8300000, guid: cccec0c8dd3c2a7469cc6401944d92b5, type: 3}
+  - {fileID: 8300000, guid: ff0647ae693d7764a94fb7b7cc116f23, type: 3}
+  - {fileID: 8300000, guid: 94189df0f0803bb469a39f9541dbb2c4, type: 3}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1358027280344105616}
   - component: {fileID: 652473173562053691}
   - component: {fileID: 2366817613866942813}
+  - component: {fileID: 7966096022400824615}
   m_Layer: 0
   m_Name: traffic cone
   m_TagString: Grabbable
@@ -135,3 +136,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3984951572076470628, guid: 0b9b3b32982ba174da36d9626cf9ff4e, type: 3}
+--- !u!114 &7966096022400824615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7007787285996196941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7669231f939849a43b3bc676779c296d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSoundClips:
+  - {fileID: 8300000, guid: 75ee28264a10ec04db5b8a0c0543b466, type: 3}
+  - {fileID: 8300000, guid: e9d909be839d13f4db9ceb2b77324288, type: 3}
+  - {fileID: 8300000, guid: fe3501744b125d047b16b70d1de1d54b, type: 3}

@@ -165,6 +165,14 @@ MonoBehaviour:
   _detectionRange: 5
   _destroyDelay: 8
   _targetObject: {fileID: 7693429758917590730}
+  idleClips:
+  - {fileID: 8300000, guid: 5d0aa28e026efdd469b168b9b819a4c0, type: 3}
+  - {fileID: 8300000, guid: de54722dcc3609949b4d713c490947de, type: 3}
+  - {fileID: 8300000, guid: f50798ed7b0ee3347b1ee39328bd31e7, type: 3}
+  runningAwayClips:
+  - {fileID: 8300000, guid: 9161df5386adfbe419ed38805fd43144, type: 3}
+  - {fileID: 8300000, guid: 5d0aa28e026efdd469b168b9b819a4c0, type: 3}
+  - {fileID: 8300000, guid: de54722dcc3609949b4d713c490947de, type: 3}
 --- !u!54 &3361268170582449657
 Rigidbody:
   m_ObjectHideFlags: 0

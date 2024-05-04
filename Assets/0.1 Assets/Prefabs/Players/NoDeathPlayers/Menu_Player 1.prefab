@@ -322,13 +322,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 500
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 500
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -523,13 +523,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -758,13 +758,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -809,7 +809,7 @@ GameObject:
   - component: {fileID: 920517354009454149}
   - component: {fileID: 4743357985185523529}
   - component: {fileID: 8911358519740539557}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Right_fuckYou
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,7 +951,7 @@ MonoBehaviour:
   _airSpeed: 2.5
   _jumpPower: 90
   _forwardJumpForce: 3
-  _groundCheckDistance: 0.7
+  _groundCheckDistance: 0.6
   _groundLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -969,6 +969,7 @@ MonoBehaviour:
   _inputNameGrabRight: RG1
   _inputNameGrabLeft: LG1
   _inputNameDive: DV1
+  balancer: {fileID: 8095046057622578079}
 --- !u!114 &937993419672109039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,7 +982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 157eabbd19981e84b969ed8f2fb05886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 1000
+  rotationSpeed: 1500
   inputNameHorizontal: HA1
   inputNameVertical: VA1
 --- !u!114 &6928904830562409752
@@ -1035,7 +1036,7 @@ MonoBehaviour:
   - {fileID: 8095046057622578079}
   - {fileID: 8887785608023658024}
   - {fileID: 937993419672109039}
-  _defaultSpring: 500
+  _defaultSpring: 800
   _zeroSpring: 5
   _inputNameDive: DV1
 --- !u!153 &3090416720244987350
@@ -1364,13 +1365,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -1598,13 +1599,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -1800,13 +1801,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -1980,13 +1981,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -2203,13 +2204,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -2436,13 +2437,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -2490,7 +2491,7 @@ GameObject:
   - component: {fileID: 8551590534238664376}
   - component: {fileID: 6369355400019623713}
   - component: {fileID: 7926850186936400369}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Right_fuckYou
   m_TagString: Grabbable
   m_Icon: {fileID: 0}
@@ -2677,13 +2678,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -2719,7 +2720,7 @@ GameObject:
   - component: {fileID: 4911590063184825326}
   m_Layer: 0
   m_Name: LeftAss
-  m_TagString: Untagged
+  m_TagString: P1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2863,13 +2864,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -3073,13 +3074,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -3312,13 +3313,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -3512,13 +3513,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -3613,6 +3614,18 @@ MonoBehaviour:
   _defaultSpring: 500
   _maxZeroSpringCount: 99
   objectToChangeTag: {fileID: 3229111807250341412}
+  _inputNameDive: DV1
+  knockOutSoundClips:
+  - {fileID: 8300000, guid: 82740b68bec565349a61a90f5d84ca01, type: 3}
+  - {fileID: 8300000, guid: 41950ae05b89c9f409a21a6b783d5a75, type: 3}
+  - {fileID: 8300000, guid: c417393bf46cc424ca40144c1d0abd9b, type: 3}
+  - {fileID: 8300000, guid: 2d7199d12a406b741970012a96102f1e, type: 3}
+  - {fileID: 8300000, guid: d0c5df49abaa890499567ff3ba071f51, type: 3}
+  - {fileID: 8300000, guid: 8bcccbbb39dbf3142862c2e2d751f1a5, type: 3}
+  DiedSoundClips:
+  - {fileID: 8300000, guid: f40593ff6b695c74a8a2d05e431fb018, type: 3}
+  - {fileID: 8300000, guid: f7070ea6fcce5fe41806f28952757cb1, type: 3}
+  - {fileID: 8300000, guid: e3a4bc4f2dd8b9c4dae8534b1030af69, type: 3}
 --- !u!1 &4932694824996801029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3785,6 +3798,7 @@ GameObject:
   - component: {fileID: 3399010464269013942}
   - component: {fileID: 231020602694468355}
   - component: {fileID: 7894719211502770671}
+  - component: {fileID: 7170165773917136109}
   m_Layer: 0
   m_Name: LeftFoot_end
   m_TagString: HandFeet
@@ -3930,13 +3944,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 500
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 500
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -3970,6 +3984,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CopyLimbs: {fileID: 7825410595709726289}
+--- !u!114 &7170165773917136109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5599364949608555414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fac5b2fbce86f1488eaf93f963c965f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSoundClips:
+  - {fileID: 8300000, guid: 0990a26816c5afe44b2aae85b3baedd4, type: 3}
+  - {fileID: 8300000, guid: 61b0327ceb9fc8847bbbcc24a253b002, type: 3}
+  - {fileID: 8300000, guid: 40fb077bb643e5d4aa358aea40186f2a, type: 3}
+  - {fileID: 8300000, guid: 73c60eb95a9c88848a444e4ea17d041f, type: 3}
+  - {fileID: 8300000, guid: 2317a3258e78a08419b16f7f788cd133, type: 3}
+  - {fileID: 8300000, guid: 3003434d4c01676429a279e3bd1e549b, type: 3}
+  - {fileID: 8300000, guid: 75b664683d9c51147aa157de74b52f6b, type: 3}
+  - {fileID: 8300000, guid: 037a62754eeb5a7408c3195aed174d1c, type: 3}
+  - {fileID: 8300000, guid: 3832515bb40a409479cd27ec8ac0d791, type: 3}
+  - {fileID: 8300000, guid: 6b0c49fb2a372bf4390ca5d2de1b332b, type: 3}
+  - {fileID: 8300000, guid: 184454290b4abfe4e86551dc8873feb8, type: 3}
+  - {fileID: 8300000, guid: b1b5ce35e514b804e980778052c8b5ac, type: 3}
+  - {fileID: 8300000, guid: 1c4698e4d5cf2f9468b2a537ad3daf61, type: 3}
+  - {fileID: 8300000, guid: 24cd6bd75a9ea7b40aa5da94658edd02, type: 3}
 --- !u!1 &5638062876931227080
 GameObject:
   m_ObjectHideFlags: 0
@@ -4257,13 +4298,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -4349,7 +4390,7 @@ GameObject:
   - component: {fileID: 7702452158654880876}
   - component: {fileID: 6300528392930217429}
   - component: {fileID: 6570615450580326149}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: 'Left_fuckYou '
   m_TagString: Grabbable
   m_Icon: {fileID: 0}
@@ -4536,13 +4577,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -4882,13 +4923,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -5112,13 +5153,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 600
+    positionSpring: 800
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -5315,7 +5356,7 @@ GameObject:
   - component: {fileID: 3639637392474071344}
   - component: {fileID: 4936519315619255774}
   - component: {fileID: 920075242410512327}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: 'Left_fuckYou '
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace itsaMeKen
+namespace ItsaMeKen
 {
     public class ObjectSpawner : MonoBehaviour
     {

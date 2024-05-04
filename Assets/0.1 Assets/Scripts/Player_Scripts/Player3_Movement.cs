@@ -43,9 +43,9 @@ namespace ItsaMeKen
         [SerializeField] private string _inputNameGrabLeft;
         [SerializeField] private string _inputNameDive;
 
+        [Header("Balancer")]
 
-
-
+        public MonoBehaviour balancer;
 
         private bool isMoving = false;
         private bool isJumping = false;
@@ -73,6 +73,8 @@ namespace ItsaMeKen
                 }
 
                 ////////////////////////////////////////////////////////////////////// Walking Animation
+                ///
+
                 if (isMoving)
                 {
                     _anim.SetBool("IsWalking", true);
@@ -82,7 +84,11 @@ namespace ItsaMeKen
                     _anim.SetBool("IsWalking", false);
                 }
             }
-            else /////////////////////////////////////////////////////////////////////  Air movement
+
+            /////////////////////////////////////////////////////////////////////  Air movement
+            ///
+
+            else 
             {
                 Vector3 airMovement = new Vector3(-verticalInput, 0, horizontalInput).normalized * _airSpeed;
                 _mover.AddForce(airMovement);
@@ -95,6 +101,8 @@ namespace ItsaMeKen
             }
 
             /////////////////////////////////////////////////////////////////////  Idle Animation
+            ///
+
             if (isJumping = true && !isMoving)
             {
                 idleTimer += Time.deltaTime;
@@ -113,6 +121,8 @@ namespace ItsaMeKen
             }
 
             ///////////////////////////////////////////////////////////////////// FUCK  YOU ANIMATION
+            ///
+
             if (Input.GetButtonDown(_inputNameGrabRight))
             {
                 Vector3 forwardForce = -transform.right * _punchPower;
@@ -141,6 +151,8 @@ namespace ItsaMeKen
             }
 
             /////////////////////////////////////////////////////////////////////  DIVE/HEADBUTT
+            ///
+
 
             if (!isDPadLeftPressed && Input.GetAxisRaw(_inputNameDive) > -0.5f)
             {
@@ -152,6 +164,17 @@ namespace ItsaMeKen
                 isDPadLeftPressed = false;
             }
 
+            ////////////////////////////////////////////////////////////////// Lost of balance whilst mid air
+            ///
+
+            if (!IsGrounded())
+            {
+                balancer.enabled = false;
+            }
+            else
+            {
+                balancer.enabled = true;
+            }
 
         }
     

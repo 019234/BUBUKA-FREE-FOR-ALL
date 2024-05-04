@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4014586234170985363}
   - component: {fileID: 3587621101624903408}
   - component: {fileID: 5034869446094691310}
+  - component: {fileID: 4054555127041531676}
   m_Layer: 0
   m_Name: Table.001
   m_TagString: Untagged
@@ -178,3 +179,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.007000002, y: 0.00038970404, z: 0.0071999994}
   m_Center: {x: 0.00000004497092, y: 0.0031600485, z: -0.0019807857}
+--- !u!114 &4054555127041531676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5224048910777632895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7669231f939849a43b3bc676779c296d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSoundClips:
+  - {fileID: 8300000, guid: a498ec901ade6af4e8b8098cc59a74e4, type: 3}
+  - {fileID: 8300000, guid: a9479220113de7648883deb144bba415, type: 3}
+  - {fileID: 8300000, guid: edeff454bd7c622479f26a1c531aa5ae, type: 3}

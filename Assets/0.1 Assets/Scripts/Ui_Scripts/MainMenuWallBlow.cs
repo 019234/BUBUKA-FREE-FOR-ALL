@@ -29,9 +29,15 @@ namespace ItsaMeKen
         [SerializeField] private GameObject j, five, dPadLeft, circle;
         [SerializeField] private GameObject particle;
 
+        [Header("SoundClip")]
+        [SerializeField] private AudioClip[] wallExplosionClips;
+
+        [Header("ambience")]
+        [SerializeField] private GameObject ambientMusic;
+        [SerializeField] private GameObject panickedMusic;
 
 
-        
+
 
 
         private void Start()
@@ -68,6 +74,7 @@ namespace ItsaMeKen
                 // Apply explosion force
                 ApplyExplosionForce();
                 ShakeCamera();
+                SoundFXManager.instance.PlayRandomSoundFXClip(wallExplosionClips, transform, 1f);
 
 
                 wallObject.SetActive(false);
@@ -90,6 +97,10 @@ namespace ItsaMeKen
                 defaultLight.SetActive(false);
                 hanging.SetActive(true);
                 particle.SetActive(true);
+
+                //Ambience
+                ambientMusic.SetActive(false);
+                panickedMusic.SetActive(true);
 
             }
         }

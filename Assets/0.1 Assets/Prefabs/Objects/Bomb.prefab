@@ -106,6 +106,14 @@ MonoBehaviour:
   explosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 3}
   _anim: {fileID: 2283047176679791010}
+  bombExplosionClips:
+  - {fileID: 8300000, guid: 06a338cc303199640aeaa0b210782c26, type: 3}
+  - {fileID: 8300000, guid: 7c63a36521e06bd4b96d0441b0d2577a, type: 3}
+  - {fileID: 8300000, guid: b1dfb55e8d286e848a820e0e12f8c8b5, type: 3}
+  bombFallingClips:
+  - {fileID: 8300000, guid: f6eb60afb7106a84a90226843f548b72, type: 3}
+  - {fileID: 8300000, guid: b52e917a17afbca4a946953098b9e2ae, type: 3}
+  - {fileID: 8300000, guid: 46f82f1f1f3dcae4a8ffb9032ac5fdb1, type: 3}
 --- !u!54 &5367702714091894662
 Rigidbody:
   m_ObjectHideFlags: 0

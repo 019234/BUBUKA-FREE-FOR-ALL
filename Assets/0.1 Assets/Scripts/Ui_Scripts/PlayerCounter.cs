@@ -41,10 +41,5 @@ namespace ItsaMeKen
         {
             return playerCount;
         }
-
-        void Update()
-        {
-          // Debug.Log("PlayerCount" + playerCount);
-        }
     }
 }

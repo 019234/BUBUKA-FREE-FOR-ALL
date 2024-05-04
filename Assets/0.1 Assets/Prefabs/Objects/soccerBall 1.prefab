@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 7541347671100322024}
   - component: {fileID: 2367484886888897723}
   - component: {fileID: 2873635795350925475}
+  - component: {fileID: 2977612367082297225}
   m_Layer: 0
   m_Name: soccerBall 1
   m_TagString: Grabbable
@@ -239,3 +240,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.0011492048
   m_Center: {x: -7.858214e-24, y: 1.164153e-10, z: -5.2386884e-10}
+--- !u!114 &2977612367082297225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4017315700332956321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7669231f939849a43b3bc676779c296d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSoundClips:
+  - {fileID: 8300000, guid: 8a323062b700b9e489eacb7ae11a36b2, type: 3}
+  - {fileID: 8300000, guid: 310ba13da6ebad848a035508023849c2, type: 3}
+  - {fileID: 8300000, guid: 72d093d63d85c6f4e888894aec11e5e3, type: 3}

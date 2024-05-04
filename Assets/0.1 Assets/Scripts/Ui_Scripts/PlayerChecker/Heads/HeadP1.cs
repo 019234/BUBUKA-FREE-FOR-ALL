@@ -6,7 +6,7 @@ namespace ItsaMeKen
 {
     public class HeadP1 : MonoBehaviour
     {
-        public float forceThreshold = 10f;
+        public float forceThreshold = 15f;
         public ConfigurableJoint[] _targetJoints;
         public Behaviour[] targetScripts;
         public float _zeroSpring = 0f;
@@ -15,15 +15,22 @@ namespace ItsaMeKen
 
         private int _zeroSpringCount = 0;
         private bool _isPermanentZeroSpring = false;
-        private bool _isDead = false;
         private bool _unconscious = false;
-        private bool _debug = false;
 
         private bool isAlive = true;
         private bool isAsleep = false;
 
         private string newTag = "Dead";
         public GameObject objectToChangeTag;
+
+        [SerializeField] private string _inputNameDive;
+
+        [Header("Sound")]
+        [SerializeField] private AudioClip[] knockOutSoundClips;
+        [SerializeField] private AudioClip[] DiedSoundClips;
+
+        private bool _knockoutfinishedClip;
+        private bool _diedfinishedClip;
 
         private void Awake()
         {
@@ -35,6 +42,12 @@ namespace ItsaMeKen
             if (_isPermanentZeroSpring)
             {
                 isAlive = false;
+                if (!_diedfinishedClip)
+                {
+                    SoundFXManager.instance.PlayRandomSoundFXClip(DiedSoundClips, transform, 1f);
+                    _diedfinishedClip = true;
+                }
+                
 
                 if (objectToChangeTag != null)
                 {
@@ -45,10 +58,26 @@ namespace ItsaMeKen
             if (_unconscious)
             {
                 isAsleep = true;
+                if (!_knockoutfinishedClip)
+                {
+                    SoundFXManager.instance.PlayRandomSoundFXClip(knockOutSoundClips, transform, 0.5f);
+                    _knockoutfinishedClip = true;
+                }
+                
             }
             else if (!_unconscious)
             {
                 isAsleep = false;
+                _knockoutfinishedClip = false;
+            }
+
+            if (Input.GetButtonDown(_inputNameDive))
+            {
+                forceThreshold = 9999f;
+            }
+            else
+            {
+                forceThreshold = 15f;
             }
         }
 
@@ -136,6 +165,7 @@ namespace ItsaMeKen
                     }
                 }
             }
+
         }
 
         public bool IsAlive()
@@ -149,3 +179,7 @@ namespace ItsaMeKen
         }
     }
 }
+
+
+
+ 

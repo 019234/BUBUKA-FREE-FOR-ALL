@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6866660229392590753}
   - component: {fileID: 4167003487673400947}
   - component: {fileID: 1187248252541629453}
+  - component: {fileID: 4268247143997443307}
   m_Layer: 0
   m_Name: cardboard_box_01
   m_TagString: Grabbable
@@ -133,3 +134,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4268247143997443307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042209970401393397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7669231f939849a43b3bc676779c296d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSoundClips:
+  - {fileID: 8300000, guid: 037a62754eeb5a7408c3195aed174d1c, type: 3}
+  - {fileID: 8300000, guid: 3832515bb40a409479cd27ec8ac0d791, type: 3}
+  - {fileID: 8300000, guid: 6b0c49fb2a372bf4390ca5d2de1b332b, type: 3}
+  - {fileID: 8300000, guid: 184454290b4abfe4e86551dc8873feb8, type: 3}
+  - {fileID: 8300000, guid: b1b5ce35e514b804e980778052c8b5ac, type: 3}
+  - {fileID: 8300000, guid: 1c4698e4d5cf2f9468b2a537ad3daf61, type: 3}
+  - {fileID: 8300000, guid: 24cd6bd75a9ea7b40aa5da94658edd02, type: 3}

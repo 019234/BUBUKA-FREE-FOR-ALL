@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1156523934921596288}
   - component: {fileID: 1355881577698240293}
   - component: {fileID: 156124241999718131}
+  - component: {fileID: 7507684972782301296}
   m_Layer: 0
   m_Name: Bench
   m_TagString: Grabbable
@@ -200,3 +201,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00043657966, y: 0.0010634466, z: 0.006744698}
   m_Center: {x: -0.008599776, y: -0.0032683206, z: -0.0020403466}
+--- !u!114 &7507684972782301296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979836738134600808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7669231f939849a43b3bc676779c296d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSoundClips:
+  - {fileID: 8300000, guid: 8abafc5b25a1e284bb479622119d3cdd, type: 3}
+  - {fileID: 8300000, guid: c78ccfe3b683ddb47b1e8441336db5dd, type: 3}
+  - {fileID: 8300000, guid: 7b653752a2217314c8600abc37ce4b6b, type: 3}

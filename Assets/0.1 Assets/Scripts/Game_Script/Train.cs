@@ -10,7 +10,10 @@ namespace ItsaMeKen
         public Transform startPoint;  
         public Transform endPoint;    
         public float speed = 5f;       
-        public float interval = 180f;  
+        public float interval = 180f;
+
+        [Header("SoundClip")]
+        [SerializeField] private AudioClip[] passingByClips;
 
         void Start()
         {
@@ -22,6 +25,7 @@ namespace ItsaMeKen
             while (true)
             {
                 GameObject train = Instantiate(trainPrefab, startPoint.position, startPoint.rotation);
+                SoundFXManager.instance.PlayRandomSoundFXClip(passingByClips, transform, 1f);
                 MoveTrain(train, startPoint.position, endPoint.position);
                 yield return new WaitForSeconds(interval);
             }

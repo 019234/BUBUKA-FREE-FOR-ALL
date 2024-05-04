@@ -27,8 +27,6 @@ namespace ItsaMeKen
         private IEnumerator ReInitialized()
         {
             yield return new WaitForSeconds(0.5f);
-            //playerExists = false;
-
         }
 
         void Start()

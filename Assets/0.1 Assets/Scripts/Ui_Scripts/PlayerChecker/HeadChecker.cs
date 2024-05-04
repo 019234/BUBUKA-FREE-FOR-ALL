@@ -12,6 +12,10 @@ namespace ItsaMeKen
         private HeadP3 headP3;
         private HeadP4 headP4;
 
+        [Header("Canvas")]
+
+        public GameObject canvas;
+
         private bool isP1Found = false;
         private bool isP2Found = false;
         private bool isP3Found = false;
@@ -39,20 +43,9 @@ namespace ItsaMeKen
         public GameObject diedP3;
         public GameObject diedP4;
 
-        private static HeadChecker instance;
-
-        void Awake()
+        void Start()
         {
-            if (instance == null)
-            {
-                instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-                return;
-            }
+            BitchSlap();
         }
 
 
@@ -182,6 +175,22 @@ namespace ItsaMeKen
         //Next scene if only 1 player remains
         // but the players are instantiated, the second player 1 enters it goes directly to next level.
 
+        public void BitchSlap()
+        {
+            kOP1.SetActive(false);
+            kOP2.SetActive(false);
+            kOP3.SetActive(false);
+            kOP4.SetActive(false);
 
+            diedP1.SetActive(false);
+            diedP2.SetActive(false);
+            diedP3.SetActive(false);
+            diedP4.SetActive(false);
+
+            uiP1.SetActive(false);
+            uiP2.SetActive(false);
+            uiP3.SetActive(false);
+            uiP4.SetActive(false);
+        }
     }
 }

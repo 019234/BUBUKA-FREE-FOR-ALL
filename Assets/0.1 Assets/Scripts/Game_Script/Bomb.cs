@@ -18,6 +18,13 @@ namespace ItsaMeKen
 
         private CinemachineVirtualCamera cinemachineCamera;
 
+        [Header("Sound")]
+
+        [SerializeField] private AudioClip[] bombExplosionClips;
+        [SerializeField] private AudioClip[] bombFallingClips;
+
+        private bool _fallFinishedClip;
+
         private void Start()
         {
             cinemachineCamera = GetComponentInChildren<CinemachineVirtualCamera>();
@@ -25,6 +32,16 @@ namespace ItsaMeKen
 
         void OnCollisionEnter(Collision collision)
         {
+            if (collision.gameObject.CompareTag("Ground") && collision.relativeVelocity.magnitude > 5.5)
+            {
+                if (!_fallFinishedClip)
+                {
+                    SoundFXManager.instance.PlayRandomSoundFXClip(bombFallingClips, transform, 0.7f);
+                    _fallFinishedClip = true;
+                }
+            }
+
+
             if (hasExploded || !collision.gameObject.CompareTag("HandFeet"))
                 return;
 
@@ -32,6 +49,15 @@ namespace ItsaMeKen
             StartFuse();
 
         }
+
+        private void OnCollisionExit(Collision collision)
+        {
+            if (collision.gameObject.CompareTag("Ground"))
+            {
+                _fallFinishedClip = false;
+            }
+        }
+
 
         void StartFuse()
         {
@@ -57,6 +83,8 @@ namespace ItsaMeKen
             {
                 Instantiate(explosionEffect, transform.position, Quaternion.identity);
             }
+
+            SoundFXManager.instance.PlayRandomSoundFXClip(bombExplosionClips, transform, 1f);
 
             ShakeCamera();
 

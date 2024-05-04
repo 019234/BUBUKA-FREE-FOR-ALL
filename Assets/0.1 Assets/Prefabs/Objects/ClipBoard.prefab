@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5070453003134726368}
   - component: {fileID: 4819330132791432904}
   - component: {fileID: 1913891008863692230}
+  - component: {fileID: 813665817722859226}
   m_Layer: 0
   m_Name: ClipBoard
   m_TagString: Untagged
@@ -155,3 +156,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &813665817722859226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6095469544843462435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7669231f939849a43b3bc676779c296d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSoundClips:
+  - {fileID: 8300000, guid: 037a62754eeb5a7408c3195aed174d1c, type: 3}
+  - {fileID: 8300000, guid: 3832515bb40a409479cd27ec8ac0d791, type: 3}
+  - {fileID: 8300000, guid: 6b0c49fb2a372bf4390ca5d2de1b332b, type: 3}
+  - {fileID: 8300000, guid: 184454290b4abfe4e86551dc8873feb8, type: 3}
+  - {fileID: 8300000, guid: b1b5ce35e514b804e980778052c8b5ac, type: 3}
+  - {fileID: 8300000, guid: 1c4698e4d5cf2f9468b2a537ad3daf61, type: 3}
+  - {fileID: 8300000, guid: 24cd6bd75a9ea7b40aa5da94658edd02, type: 3}

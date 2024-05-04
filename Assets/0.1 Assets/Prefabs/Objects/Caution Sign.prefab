@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2233509390103765087}
   - component: {fileID: 7233909590686123803}
   - component: {fileID: 9014685211792999418}
+  - component: {fileID: 5057611849825492265}
   m_Layer: 0
   m_Name: Caution Sign
   m_TagString: Untagged
@@ -134,3 +135,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0099796215, y: 0.0016251485, z: 0.019343153}
   m_Center: {x: -0.000006773978, y: 0.0005090748, z: -0.004175526}
+--- !u!114 &5057611849825492265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3091703763621204472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7669231f939849a43b3bc676779c296d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSoundClips:
+  - {fileID: 8300000, guid: e09a60cd6930cbd4583e7e9ec32fda4e, type: 3}
+  - {fileID: 8300000, guid: 526c30413bc501b40afa71c89a4cfac6, type: 3}
+  - {fileID: 8300000, guid: 62bfff0058e41fb41beb9cbc0a100a82, type: 3}

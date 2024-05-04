@@ -10,3 +10,6 @@ Bomb idea, Add an effect on spark, make a cable script, it has an start and an e
 
 i want to let them fight for what they want, divide the team, 
 
+
+ai look follow and bring bombs, of if theres no available bombs near by, it should push them off i think.
+

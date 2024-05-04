@@ -43,6 +43,10 @@ namespace ItsaMeKen
         [SerializeField] private string _inputNameGrabLeft;
         [SerializeField] private string _inputNameDive;
 
+        [Header("Balancer")]
+
+        public MonoBehaviour balancer;
+
 
         private bool isMoving = false;
         private bool isJumping = false;
@@ -68,6 +72,8 @@ namespace ItsaMeKen
                 }
 
                 ////////////////////////////////////////////////////////////////////// Walking Animation
+                ///
+
                 if (isMoving)
                 {
                     _anim.SetBool("IsWalking", true);
@@ -83,6 +89,8 @@ namespace ItsaMeKen
                 _mover.AddForce(airMovement);
             }
             ///////////////////////////////////////////////////////////////////////// JumpInput
+            ///
+
             if (IsGrounded() && Input.GetButtonDown(_inputNameJump))
             {
                 isJumping = true;
@@ -90,6 +98,8 @@ namespace ItsaMeKen
             }
 
             /////////////////////////////////////////////////////////////////////  Idle Animation
+            ///
+
             if (isJumping = true && !isMoving)
             {
                 idleTimer += Time.deltaTime;
@@ -108,6 +118,8 @@ namespace ItsaMeKen
             }
 
             ///////////////////////////////////////////////////////////////////// FUCK  YOU ANIMATION
+            ///
+
             if (Input.GetButtonDown(_inputNameGrabRight))
             {
                 Vector3 forwardForce = -transform.right * _punchPower;
@@ -118,16 +130,15 @@ namespace ItsaMeKen
             }
             else if (Input.GetButtonUp(_inputNameGrabRight))
             {
-                Vector3 forwardForce = -transform.right * _punchPower;
-
-                fist_Left.AddForce(forwardForce, ForceMode.Impulse);
-
                 _anim.SetBool("Right_FuckYou", false);
             }
+
+
 
             if (Input.GetButtonDown(_inputNameGrabLeft))
             {
                 Vector3 forwardForce = -transform.right * _punchPower;
+                fist_Left.AddForce(forwardForce, ForceMode.Impulse);
                 _anim.SetBool("Left_FuckYou", true);
             }
             else if (Input.GetButtonUp(_inputNameGrabLeft))
@@ -136,6 +147,7 @@ namespace ItsaMeKen
             }
 
             /////////////////////////////////////////////////////////////////////  DIVE/HEADBUTT
+            ///
 
             if (Input.GetButtonDown(_inputNameDive))
             {
@@ -143,6 +155,18 @@ namespace ItsaMeKen
                 Vector3 forwardForce = -transform.right * _headbutForce;
                 _head.AddForce(forwardForce, ForceMode.Impulse);
 
+            }
+
+            ////////////////////////////////////////////////////////////////// Lost of balance whilst mid air
+            ///
+
+            if (!IsGrounded())
+            {
+                balancer.enabled = false;
+            }
+            else
+            {
+                balancer.enabled = true;
             }
         }
 
