@@ -949,9 +949,9 @@ MonoBehaviour:
   _mover: {fileID: 4537473597787057655}
   _speed: 25
   _airSpeed: 2.5
-  _jumpPower: 90
+  _jumpPower: 140
   _forwardJumpForce: 3
-  _groundCheckDistance: 0.7
+  _groundCheckDistance: 0.8
   _groundLayer:
     serializedVersion: 2
     m_Bits: 1
